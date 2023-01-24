@@ -80,7 +80,7 @@
   border: 1px solid transparent;
   box-shadow: none;
 
-  transition: color var(--transition-time-main) var(--time-function); background-color var(--transition-time-main) var(--time-function); box-shadow var(--transition-time-main)
+  transition: color var(--transition-time-main) var(--time-function); background-color: var(--transition-time-main) var(--time-function); box-shadow: var(--transition-time-main)
     var(--time-function);
 
   &:hover,

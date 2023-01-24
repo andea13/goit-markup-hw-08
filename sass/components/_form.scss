@@ -115,7 +115,7 @@
   border: 2px solid var(--section-title-color);
   fill: transparent;
   margin-left: 12px;
-  transition: fill var(--transition-time-main) var(--time-function); background-color var(--transition-time-main) var(--time-function); border-color var(--transition-time-main)
+  transition: fill var(--transition-time-main) var(--time-function); background-color: var(--transition-time-main) var(--time-function); border-color: var(--transition-time-main)
     var(--time-function);
 }
 

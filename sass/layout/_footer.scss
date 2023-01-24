@@ -23,7 +23,7 @@
   color: var(--primary-button-color);
   background-color: var(--foooter-icon-color);
 
-  transition: color var(--transition-time-main) var(--time-function); background-color var(--transition-time-main)
+  transition: color var(--transition-time-main) var(--time-function); background-color: var(--transition-time-main)
     var(--time-function);
 
   &:hover,

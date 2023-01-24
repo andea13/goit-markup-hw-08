@@ -29,7 +29,7 @@
   border: 1px solid var(--network-icon-color);
   border-radius: 4px;
 
-  transition: color var(--transition-time-main) var(--time-function); border-color var(--transition-time-main) var(--time-function); fill var(--transition-time-main)
+  transition: color var(--transition-time-main) var(--time-function); border-color: var(--transition-time-main) var(--time-function); fill: var(--transition-time-main)
     var(--time-function);
 
   &:hover,
