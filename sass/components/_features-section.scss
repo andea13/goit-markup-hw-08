@@ -1,0 +1,45 @@
+.features-list {
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+}
+
+
+.features-list--item {
+  max-width: 270px;
+  flex-basis: calc((100% - 90px) / 4);
+}
+
+
+.features-list--card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 270px;
+  max-height: 120px;
+  margin-bottom: 30px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: var(--secondary-button-background-color);
+}
+
+.features-list--icon {
+  width: 70px;
+  height: 70px;
+  fill: currentColor;
+
+  transition: fill var(--transition-time-main) var(--time-function);
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+}
+
+.features-list--label {
+  padding-top: 0;
+  margin-top: 0;
+  max-width: 270px;
+  font-size: 14px;
+  line-height: 1.7;
+}

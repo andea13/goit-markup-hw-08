@@ -1,0 +1,41 @@
+.address--label {
+  color: var(--footer-contact-background);
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  text-align: left;
+
+  transition: color var(--transition-time-main) var(--time-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+
+  &__physical {
+    margin-top: 18px;
+    margin-bottom: 12px;
+    color: var(--primary-button-color);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    text-align: left;
+  }
+
+  &__mail {
+    display: block;
+    margin-bottom: 12px;
+  }
+
+  &__tel {
+    display: block;
+    padding-bottom: 0;
+  }
+}
+
+
+.address--label-list {
+    display: block;
+    margin-bottom: 0;
+}
+

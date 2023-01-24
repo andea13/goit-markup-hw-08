@@ -1,0 +1,85 @@
+.container {
+  max-width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container-hero {
+  text-align: center;
+  padding-bottom: 0;
+
+  @extend .container
+}
+
+.container--header {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  padding-top: 0;
+  padding-right: 15px;
+  padding-bottom: 0;
+  padding-left: 15px;
+  border-bottom: none;
+}
+
+.container-team {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--secondary-button-background-color);
+}
+
+.team-list--container {
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: var(--primary-button-color);
+  text-align: center;
+
+  .section-subtitle,
+  .team-list--subtitle {
+    display: block;
+    text-align: center;
+  }
+}
+
+.container--client-list {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.container--footer {
+  max-width: 1200px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.subscription--container {
+  padding: 0;
+  margin-left: 93px;
+}
+
+.filter--container {
+  max-width: 1200px;
+  margin: 0, auto;
+  padding: 0, 15px;
+}
+
+.container--footer {
+  display: flex;
+  align-items: baseline;
+}
+
+.container--footer-networks {
+  margin-left: 70px;
+}
+
+.form-field--container {
+  position: relative;
+  width: 448px;
+}

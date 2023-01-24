@@ -1,0 +1,21 @@
+.spec-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 50px;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.spec-list--item {
+  flex-basis: calc((100% - 60px) / 3);
+  max-width: 370px;
+
+  &:first-child {
+    margin-left: 0;
+  };
+
+  &:last-child {
+    margin-right: 0;
+  }
+}

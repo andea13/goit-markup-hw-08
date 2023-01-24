@@ -1,0 +1,18 @@
+.filter--item-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 94px;
+    margin-right: auto;
+    margin-bottom: 50px;
+    margin-left: auto;
+}
+
+.filter--item:last-child {
+    margin-right: 0;
+}
+
+.filter--item:first-child {
+    margin-left: 0;
+}

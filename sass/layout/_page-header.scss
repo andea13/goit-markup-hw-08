@@ -1,0 +1,11 @@
+.header {
+    border-bottom: 1px solid var(--header-border);
+}
+
+
+.logo--header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    color: var(--logo-color);
+    @extend %logo;
+}

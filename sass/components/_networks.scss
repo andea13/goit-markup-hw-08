@@ -1,0 +1,42 @@
+.network-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.network-list--item {
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.network-list--link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-radius: 50%;
+  color: var(--network-icon-color);
+  text-decoration: none;
+  font-size: 0;
+
+  transition: color var(--transition-time-main) var(--time-function); background-color var(--transition-time-main)
+    var(--time-function);
+
+  &:hover,
+  &:focus {
+    color: var(--primary-button-color);
+    background-color: var(--accent-color);
+  }
+}
+
+
+.network-list--icon {
+    fill: currentColor;
+}

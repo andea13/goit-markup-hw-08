@@ -1,0 +1,43 @@
+.spec-list--overlay {
+  position: absolute;
+  top: 100%;
+  margin: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  padding-left: auto;
+  padding-right: auto;
+  width: 100%;
+  height: 70px;
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: var(--primary-button-color);
+  background-color: rgba(47, 48, 58, 0.8);
+  text-align: center;
+  transform: translateY(-100%);
+}
+
+.product--overlay {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-size: 18px;
+  padding: 63px 24px;
+  text-align: left;
+  line-height: 1.6;
+  color: var(--primary-button-color);
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(100%);
+  transition: transform var(--transition-time-main) var(--time-function);
+
+  a:hover & {
+    transform: translateY(0);
+  }
+}
