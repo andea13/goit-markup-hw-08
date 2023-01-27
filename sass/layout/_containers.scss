@@ -18,9 +18,11 @@
   }
 }
 
-// .container--header {
-  // display: flex;
-  // justify-content: space-between;
+.container--header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
 
 
@@ -87,8 +89,7 @@
 
 .container--footer {
   max-width: 1200px;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 0;
 }
 
 .subscription--container {
@@ -107,9 +108,10 @@
 //   align-items: baseline;
 // }
 
-// .container--footer-networks {
-//   margin-left: 70px;
-// }
+.container--footer-networks {
+  margin-bottom: 60px;
+  // margin-left: 70px;
+}
 
 .form-field--container {
   position: relative;

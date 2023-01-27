@@ -391,12 +391,12 @@ body {
   --portfolio-border: #eeeeee;
   --footer-contact-background: rgba(255, 255, 255, 0.6);
   --network-icon-color: #afb1b8;
-  --foooter-icon-color: rgba(255, 255, 255, 0.1);
+  --footer-icon-color: rgba(255, 255, 255, 0.1);
   --time-function: cubic-bezier(0.4, 0, 0.2, 1);
   --transition-time-main: 250ms;
 }
 
-.logo--header, .logo--footer, .logo--label {
+.logo--header, .logo--label__footer, .logo--label {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -405,11 +405,12 @@ body {
 }
 
 .address--label {
+  display: block;
   color: var(--footer-contact-background);
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
-  text-align: left;
+  text-align: center;
   -webkit-transition: color var(--transition-time-main) var(--time-function);
   transition: color var(--transition-time-main) var(--time-function);
 }
@@ -417,21 +418,22 @@ body {
   color: var(--accent-color);
 }
 .address--label__physical {
-  margin-top: 18px;
+  display: block;
+  margin-top: 0;
   margin-bottom: 12px;
   color: var(--primary-button-color);
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
-  text-align: left;
+  text-align: center;
 }
 .address--label__mail {
-  display: block;
   margin-bottom: 12px;
+  display: block;
 }
 .address--label__tel {
-  display: block;
   padding-bottom: 0;
+  display: block;
 }
 
 .address--label-list {
@@ -502,10 +504,20 @@ body {
 }
 
 .subscription--button {
-  max-width: 200px;
-  width: 100%;
-  max-height: 50px;
-  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 12px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 200px;
+  height: 50px;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -616,9 +628,8 @@ body {
 }
 
 .client-list--item {
-  margin: 0px 0px 30px 0px;
   max-width: 210px;
-  max-height: 92px;
+  height: 92px;
   color: var(--network-icon-color);
   -ms-flex-preferred-size: calc((100% - 30px) / 2);
       flex-basis: calc((100% - 30px) / 2);
@@ -982,16 +993,21 @@ body {
 }
 
 .logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  text-align: left;
+  font-size: 24px;
+  line-height: 1.17;
 }
 
 .logo--label {
-  margin-top: 24px;
-  margin-bottom: 25px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  padding-top: 24px;
+  padding-bottom: 25px;
   color: var(--accent-color);
 }
 
@@ -1001,7 +1017,6 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  max-width: 480px;
   width: 100%;
   max-height: 796px;
   height: 100%;
@@ -1148,10 +1163,8 @@ body {
 }
 
 .network-list--item {
-  max-width: 44px;
-  width: 100%;
-  max-height: 44px;
-  height: 100%;
+  width: 44px;
+  height: 44px;
   padding: 0;
   margin-top: 0;
   margin-bottom: 0;
@@ -1172,15 +1185,29 @@ body {
   margin-top: 0;
   margin-bottom: 0;
   border-radius: 50%;
-  color: var(--network-icon-color);
   text-decoration: none;
   font-size: 0;
+}
+
+.network-list--link__team {
+  color: var(--network-icon-color);
+  background-color: transparent;
   -webkit-transition: color var(--transition-time-main) var(--time-function);
   transition: color var(--transition-time-main) var(--time-function);
   background-color: var(--transition-time-main) var(--time-function);
 }
-.network-list--link:hover, .network-list--link:focus {
+.network-list--link__team:hover {
   color: var(--primary-button-color);
+  background-color: var(--accent-color);
+}
+
+.network-list--link__footer {
+  color: var(--primary-button-color);
+  background-color: var(--footer-icon-color);
+  -webkit-transition: background-color var(--transition-time-main) var(--time-function);
+  transition: background-color var(--transition-time-main) var(--time-function);
+}
+.network-list--link__footer:hover {
   background-color: var(--accent-color);
 }
 
@@ -1290,6 +1317,7 @@ body {
   font-size: 14px;
   line-height: 1.1;
   text-transform: uppercase;
+  text-align: center;
   color: var(--primary-button-color);
 }
 
@@ -1322,13 +1350,30 @@ body {
   margin-bottom: 20px;
   color: var(--primary-button-color);
   text-transform: uppercase;
+  text-align: center;
+}
+
+.subscription--form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .subscription--label {
-  max-width: 352px;
+  max-width: 450px;
   width: 100%;
-  max-height: 50px;
-  height: 100%;
+  height: 50px;
+  margin-bottom: 20px;
 }
 
 .subscription--input {
@@ -1466,6 +1511,18 @@ a:hover .product--overlay {
   }
 }
 
+.container--header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .team-list--container {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -1489,8 +1546,7 @@ a:hover .product--overlay {
 
 .container--footer {
   max-width: 1200px;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 0;
 }
 
 .subscription--container {
@@ -1502,6 +1558,10 @@ a:hover .product--overlay {
   max-width: 1200px;
   margin: 0, auto;
   padding: 0, 15px;
+}
+
+.container--footer-networks {
+  margin-bottom: 60px;
 }
 
 .form-field--container {
@@ -1582,31 +1642,50 @@ a:hover .product--overlay {
 
 .footer {
   background-color: var(--hero-background-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer--nav {
+  margin-top: 0;
+  margin-bottom: 60px;
 }
 
 .logo--footer {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 28px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
   color: var(--primary-button-color);
 }
 
-.network-list--link--footer {
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-  border-radius: 50%;
-  text-decoration: none;
-  font-size: 0;
-  color: var(--primary-button-color);
-  background-color: var(--foooter-icon-color);
-  -webkit-transition: color var(--transition-time-main) var(--time-function);
-  transition: color var(--transition-time-main) var(--time-function);
-  background-color: var(--transition-time-main) var(--time-function);
+.logo--label__footer {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  color: var(--accent-color);
 }
-.network-list--link--footer:hover, .network-list--link--footer:focus {
-  color: var(--primary-button-color);
-  background-color: var(--accent-color);
+
+.main-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .site-nav {
@@ -1659,6 +1738,12 @@ a:hover .product--overlay {
 }
 @media (min-width: 480px) {
   .header {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 480px) {
+  .header {
     width: 480px;
   }
 }
@@ -1674,14 +1759,18 @@ a:hover .product--overlay {
 }
 
 .header--burger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: absolute;
-  top: 10px;
+  top: auto;
+  bottom: auto;
   right: 15px;
-  border-bottom: 10px;
   padding: 0;
   margin: 0;
   border: none;
   color: transparent;
+  font-family: inherit;
   background-color: var(--white-color);
   cursor: pointer;
 }
@@ -1698,8 +1787,6 @@ a:hover .product--overlay {
   }
 }
 .logo--header {
-  padding-top: 24px;
-  padding-bottom: 25px;
   color: var(--logo-color);
 }
 

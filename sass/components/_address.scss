@@ -1,9 +1,10 @@
 .address--label {
+  display: block;
   color: var(--footer-contact-background);
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
-  text-align: left;
+text-align: center;
 
   transition: color var(--transition-time-main) var(--time-function);
 
@@ -13,29 +14,30 @@
   }
 
   &__physical {
-    margin-top: 18px;
+    display: block;
+    margin-top: 0;
     margin-bottom: 12px;
     color: var(--primary-button-color);
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
-    text-align: left;
+    text-align: center;
   }
 
   &__mail {
-    display: block;
     margin-bottom: 12px;
+    display: block;
   }
 
   &__tel {
-    display: block;
     padding-bottom: 0;
+    display: block;
   }
 }
 
 
 .address--label-list {
-    display: block;
+  display: block;
     margin-bottom: 0;
 }
 

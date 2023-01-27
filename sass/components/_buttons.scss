@@ -36,15 +36,13 @@
 }
 
 .subscription--button {
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
-  // gap: 12px;
-  // flex-wrap: wrap;
-  max-width: 200px;
-  width: 100%;
-  max-height: 50px;
-  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  width: 200px;
+  height: 50px;
 
   font-family: inherit;
   font-weight: 700;
@@ -82,8 +80,9 @@
   border: 1px solid transparent;
   box-shadow: none;
 
-  transition: color var(--transition-time-main) var(--time-function); background-color: var(--transition-time-main) var(--time-function); box-shadow: var(--transition-time-main)
-    var(--time-function);
+  transition: color var(--transition-time-main) var(--time-function);
+  background-color: var(--transition-time-main) var(--time-function);
+  box-shadow: var(--transition-time-main) var(--time-function);
 
   &:hover,
   &:focus {
