@@ -1,6 +1,19 @@
 .contacts-nav {
+  display: none;
+
+  @media (min-width: 768px){
   display: flex;
+  flex-direction: column;
   margin-left: auto;
+  margin: 0;
+  padding: 0;
+}
+
+ @media (min-width: 1200px) {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+}
 }
 
 .contacts-nav--item {

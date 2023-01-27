@@ -17,11 +17,13 @@
 
 .modal--close {
     position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
     top: 8px;
     right: 8px;
-    width: 30px;
-    height: 30px;
+    max-width: 30px;
+    width: 100%;
+    max-height: 30px;
+    height: 100%;
 }

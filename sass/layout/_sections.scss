@@ -1,20 +1,25 @@
 .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .section-features {
-    padding-bottom: 0;
+//   padding-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 1199px) {
+  .spec-section {
+    display: none;
+  }
 }
 
 .section-team {
-    margin-left: auto;
-    margin-right: auto;
-    padding-right: 15px;
-    padding-left: 15px;
-    background-color: var(--secondary-button-background-color);
+  padding-top: 60px;
+  background-color: var(--secondary-button-background-color);
 }
 
 .filter--section {
-    padding-top: 0;
+  padding-top: 0;
 }

@@ -1,6 +1,22 @@
 .header {
+  position: relative;
   border-bottom: 1px solid var(--header-border);
+  min-height: 60px;
+
+  @media (min-width: 480px) {
+      width: 480px;
+    }
+  
+    @media (min-width: 768px) {
+      width: 768px;
+    }
+  
+    @media (min-width: 1200px) {
+      width: 1200px;
+    }
+
 }
+
 
 .header--burger {
   position: absolute;
@@ -13,11 +29,15 @@
   color: transparent;
   background-color: var(--white-color);
   cursor: pointer;
+ 
+  
 
   @media (min-width: 768px) {
     display: none;
   }
 }
+
+
 
 @media (max-width: 767px) {
   .site-nav,

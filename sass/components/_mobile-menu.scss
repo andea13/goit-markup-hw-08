@@ -13,6 +13,10 @@
   background-color: var(--primary-button-color);
   transform: translateX(-100%);
   transition: transform 500ms;
+
+  @media (min-width: 768px){
+    display: none;
+  }
 }
 
 .mobile-nav {
@@ -92,8 +96,8 @@
 }
 
 .mobile-networks {
-  display: inline-flex;
-  gap: 20px;
+  // display: inline-flex;
+  // gap: 20px;
   margin: 0;
   padding: 0;
 

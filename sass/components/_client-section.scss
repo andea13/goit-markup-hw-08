@@ -1,36 +1,73 @@
 .client-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  gap: 30px;
 }
 
+  // @include for-tablet-landscape-up {
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   gap: 30px;
+  // }
+
+  // @include for-desktop-up {
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  // }
+// }
+
 .client-list--item {
-  flex-basis: calc((100% - 150px) / 6);
+  margin: 0px 0px 30px 0px;
+  max-width: 210px;
+  max-height: 92px;
   color: var(--network-icon-color);
-  margin-right: 30px;
+  flex-basis: calc((100% - 30px) / 2);
 
-  &:last-child {
-    margin-right: 0;
-  }
+  
 
-  &:first-child {
-    margin-left: 0;
-  }
+  // @include for-tablet-landscape-up {
+  //   flex-basis: calc((100% - 60px) / 3);
+  //   // flex-wrap: wrap;
+  //   // margin-right: 30px;
+  // }
+
+  // @include for-desktop-up {
+  //   flex-basis: calc((100% - 150px) / 6);
+  //   margin-right: 30px;
+  // }
+
+  // &:last-child {
+  //   margin-right: 0;
+  // }
+
+  // &:first-child {
+  //   margin-left: 0;
+  // }
 }
 
 .client-list--link {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   color: inherit;
-  width: 170px;
-  height: 92px;
+  // max-width: 170px;
+width: 100%;
+  // max-height: 92px;
+  height: 100%;
+  // margin-right: 0;
+
   margin-bottom: 0;
   border: 1px solid var(--network-icon-color);
   border-radius: 4px;
 
-  transition: color var(--transition-time-main) var(--time-function); border-color: var(--transition-time-main) var(--time-function); fill: var(--transition-time-main)
-    var(--time-function);
+  transition: color var(--transition-time-main) var(--time-function);
+  border-color: var(--transition-time-main) var(--time-function);
+  fill: var(--transition-time-main) var(--time-function);
 
   &:hover,
   &:focus {
@@ -38,10 +75,15 @@
     border-color: var(--accent-color);
     fill: var(--accent-color);
   }
+
+  // @include for-tablet-landscape-up {
+  //   width: 210px;
+  //   height: 92px;
+  // }
 }
 
 .client-list--icon {
-    fill: currentColor;
-    margin: auto;
-    cursor: pointer;
+  fill: currentColor;
+  margin: auto;
+  cursor: pointer;
 }

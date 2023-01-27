@@ -4,6 +4,7 @@
   margin-right: auto;
   margin-left: auto;
 
+
   @media (min-width: 480px) {
     width: 480px;
   }
@@ -17,40 +18,52 @@
   }
 }
 
-
-.container--mobile{
-display: flex;
-flex-direction: column;
-align-content: space-between;
-height: 100%;
-}
+// .container--header {
+  // display: flex;
+  // justify-content: space-between;
 
 
-.container-hero {
-  text-align: center;
-  padding-bottom: 0;
 
-  @extend .container;
-}
+  // @media (min-width: 768px) {
+  //   margin: 0 auto;
+  //   max-width: 768px;
+  // }
 
-.container--header {
-  display: flex;
-  align-items: center;
- align-content: space-between;
+  //   @media (min-width: 1200px){
+  //     display: flex;
+  //     align-items: center;
+  //     align-content: center;
+  //   }
 
-  @media (min-width:768px) {
-      margin: 0 auto;
-    }
-}
 
-.container-team {
-  margin-left: auto;
-  margin-right: auto;
-  background-color: var(--secondary-button-background-color);
-}
+//   //   @media (min-width: 1200px) {
+//   //     width: 1200px;
+//   //   }
+// }
+
+// .container--mobile{
+// display: flex;
+// flex-direction: column;
+// align-content: space-between;
+// height: 100%;
+// }
+
+
+// .container-hero {
+//   text-align: center;
+//   padding-bottom: 0;
+
+//   @extend .container;
+// }
+
+
+// .container-team {
+//   // margin-left: auto;
+//   // margin-right: auto;
+//   background-color: var(--secondary-button-background-color);
+// }
 
 .team-list--container {
-  display: block;
   padding-top: 30px;
   padding-bottom: 30px;
   border-bottom-right-radius: 4px;
@@ -80,7 +93,7 @@ height: 100%;
 
 .subscription--container {
   padding: 0;
-  margin-left: 93px;
+  margin-left: auto;
 }
 
 .filter--container {
@@ -89,16 +102,17 @@ height: 100%;
   padding: 0, 15px;
 }
 
-.container--footer {
-  display: flex;
-  align-items: baseline;
-}
+// .container--footer {
+//   display: flex;
+//   align-items: baseline;
+// }
 
-.container--footer-networks {
-  margin-left: 70px;
-}
+// .container--footer-networks {
+//   margin-left: 70px;
+// }
 
 .form-field--container {
   position: relative;
-  width: 448px;
+  max-width: 448px;
+  width: 100%;
 }

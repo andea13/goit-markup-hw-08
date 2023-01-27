@@ -4,10 +4,13 @@
   justify-content: center;
   gap: 10px;
 }
+  
 
 .network-list--item {
-  width: 44px;
-  height: 44px;
+  max-width: 44px;
+  width: 100%;
+  max-height: 44px;
+  height: 100%;
   padding: 0;
   margin-top: 0;
   margin-bottom: 0;
