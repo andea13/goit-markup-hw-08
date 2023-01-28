@@ -1651,6 +1651,21 @@ a:hover .product--overlay {
   padding: 0;
 }
 
+@media (min-width: 768px) {
+  .footer--tablet-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 165px;
+    margin-bottom: 60px;
+    padding-left: 61px;
+    padding-right: 74px;
+    -webkit-box-pack: baseline;
+        -ms-flex-pack: baseline;
+            justify-content: baseline;
+  }
+}
+
 .subscription--container {
   padding: 0;
   margin-left: auto;
@@ -1664,6 +1679,11 @@ a:hover .product--overlay {
 
 .container--footer-networks {
   margin-bottom: 60px;
+}
+@media (min-width: 768px) {
+  .container--footer-networks {
+    margin: 0;
+  }
 }
 
 .form-field--container {
@@ -1769,6 +1789,11 @@ a:hover .product--overlay {
 .footer--nav {
   margin-top: 0;
   margin-bottom: 60px;
+}
+@media (min-width: 768px) {
+  .footer--nav {
+    margin: 0;
+  }
 }
 
 .logo--footer {

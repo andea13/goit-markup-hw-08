@@ -92,6 +92,17 @@ height: 100%;
   padding: 0;
 }
 
+.footer--tablet-container{
+  @media (min-width: 768px){
+  display: flex;
+  gap: 165px;
+  margin-bottom: 60px;
+  padding-left: 61px;
+  padding-right: 74px;
+  justify-content: baseline;
+}
+}
+
 .subscription--container {
   padding: 0;
   margin-left: auto;
@@ -110,6 +121,10 @@ height: 100%;
 
 .container--footer-networks {
   margin-bottom: 60px;
+
+  @media (min-width: 768px) {
+      margin: 0;
+    }
   // margin-left: 70px;
 }
 
