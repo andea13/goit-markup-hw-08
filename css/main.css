@@ -1456,8 +1456,6 @@ body {
 }
 
 .team-list {
-  padding-left: auto;
-  padding-right: auto;
   padding-top: 50px;
   background-color: var(--secondary-button-background-color);
 }
@@ -1466,21 +1464,18 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     gap: 30px;
+    padding-top: 30px;
   }
 }
 @media (min-width: 1200px) {
   .team-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    gap: 30px;
+    padding-top: 50px;
   }
 }
 
@@ -1494,6 +1489,23 @@ body {
 }
 .team-list--card:last-child {
   margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  .team-list--card {
+    max-width: 354px;
+    width: 100%;
+    max-height: 536px;
+    height: 100%;
+    margin: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .team-list--card {
+    max-width: 270px;
+    width: 100%;
+    max-height: 428px;
+    height: 100%;
+  }
 }
 
 .team-list--label {
