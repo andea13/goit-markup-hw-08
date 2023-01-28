@@ -634,6 +634,20 @@ body {
   -ms-flex-preferred-size: calc((100% - 30px) / 2);
       flex-basis: calc((100% - 30px) / 2);
 }
+@media (min-width: 768px) {
+  .client-list--item {
+    -ms-flex-preferred-size: calc((100% - 60px) / 3);
+        flex-basis: calc((100% - 60px) / 3);
+    max-width: 226px;
+  }
+}
+@media (min-width: 1200px) {
+  .client-list--item {
+    -ms-flex-preferred-size: calc((100% - 150px) / 6);
+        flex-basis: calc((100% - 150px) / 6);
+    max-width: 170px;
+  }
+}
 
 .client-list--link {
   display: -webkit-box;
