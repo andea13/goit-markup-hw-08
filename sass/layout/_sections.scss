@@ -1,6 +1,11 @@
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
+
+  // @media (min-width: 480px) {
+  //     margin-left: auto;
+  //     margin-right: auto;
+  //   }
 }
 
 .section-features {
@@ -9,11 +14,14 @@
   margin-right: auto;
 }
 
-@media (max-width: 1199px) {
+
   .spec-section {
     display: none;
+    @media (min-width: 1200px){
+      display: block;
+    }
   }
-}
+
 
 .section-team {
   padding-top: 60px;

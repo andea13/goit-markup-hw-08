@@ -28,6 +28,10 @@ margin-bottom: 30px;
   margin-bottom: 0;
 }
 
+@media (min-width: 768px) {
+  width: 354px;
+}
+
 @media (min-width: 1200px){
   max-width: 270px;
   flex-basis: calc((100% - 90px) / 4);

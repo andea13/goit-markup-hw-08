@@ -740,6 +740,11 @@ body {
 .features-list--item:last-child {
   margin-bottom: 0;
 }
+@media (min-width: 768px) {
+  .features-list--item {
+    width: 354px;
+  }
+}
 @media (min-width: 1200px) {
   .features-list--item {
     max-width: 270px;
@@ -1350,6 +1355,34 @@ body {
   color: var(--primary-button-color);
 }
 
+.spec-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 50px;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.spec-list--item {
+  -ms-flex-preferred-size: calc((100% - 60px) / 3);
+      flex-basis: calc((100% - 60px) / 3);
+  max-width: 370px;
+}
+.spec-list--item:first-child {
+  margin-left: 0;
+}
+.spec-list--item:last-child {
+  margin-right: 0;
+}
+
 .section--title {
   margin-top: 0;
   margin-bottom: 0;
@@ -1643,11 +1676,13 @@ a:hover .product--overlay {
   }
 }
 
-.contacts-nav--item {
-  margin-left: auto;
-}
-.contacts-nav--item + .contacts-nav--item {
-  margin-left: 40px;
+@media (min-width: 1200px) {
+  .contacts-nav--item {
+    margin-left: auto;
+  }
+  .contacts-nav--item + .contacts-nav--item {
+    margin-left: 40px;
+  }
 }
 
 .contacts-nav--link {
@@ -1657,15 +1692,13 @@ a:hover .product--overlay {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   color: var(--primary-text-color);
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   -webkit-transition: color var(--transition-time-main) var(--time-function);
   transition: color var(--transition-time-main) var(--time-function);
@@ -1673,14 +1706,32 @@ a:hover .product--overlay {
 .contacts-nav--link:hover, .contacts-nav--link:focus {
   color: var(--accent-color);
 }
+@media (min-width: 768px) {
+  .contacts-nav--link:first-child {
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 1200px) {
+  .contacts-nav--link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-size: 14px;
+    line-height: 1.14;
+  }
+  .contacts-nav--link:first-child {
+    margin-bottom: 0;
+  }
+}
 
 .contacts-nav--icon {
   height: 100%;
   margin-right: 10px;
   fill: currentColor;
 }
-.contacts-nav--icon:nth-child(2) {
-  padding-left: 30px;
+@media (min-width: 1200px) {
+  .contacts-nav--icon:nth-child(2) {
+    padding-left: 30px;
+  }
 }
 
 .footer {
@@ -1734,8 +1785,24 @@ a:hover .product--overlay {
 .site-nav {
   display: none;
 }
+@media (min-width: 768px) {
+  .site-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 88px;
+  }
+}
 .site-nav--item:not(:last-child) {
-  margin-right: auto;
+  margin-right: 50px;
+}
+@media (min-width: 1200px) {
+  .site-nav {
+    margin-left: 93px;
+  }
 }
 
 .site-nav--link {
@@ -1753,6 +1820,13 @@ a:hover .product--overlay {
 .site-nav--link:hover, .site-nav--link:focus {
   color: var(--accent-color);
 }
+@media (min-width: 1200px) {
+  .site-nav--link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-size: 14px;
+  }
+}
 
 .site-nav--link__current {
   position: relative;
@@ -1766,8 +1840,7 @@ a:hover .product--overlay {
   bottom: 0;
   display: block;
   width: 100%;
-  max-height: 4px;
-  height: 100%;
+  height: 4px;
   border-radius: 2px;
   background-color: var(--accent-color);
   -webkit-transition: opacity var(--transition-time-main) var(--time-function);
@@ -1777,12 +1850,17 @@ a:hover .product--overlay {
 .header {
   position: relative;
   border-bottom: 1px solid var(--header-border);
-  min-height: 60px;
+  height: 60px;
 }
 @media (min-width: 480px) {
   .header {
     margin-left: auto;
     margin-right: auto;
+  }
+}
+@media (min-width: 768px) {
+  .header {
+    height: 80px;
   }
 }
 @media (min-width: 480px) {
@@ -1843,11 +1921,15 @@ a:hover .product--overlay {
   margin-right: auto;
 }
 
-@media (max-width: 1199px) {
+.spec-section {
+  display: none;
+}
+@media (min-width: 1200px) {
   .spec-section {
-    display: none;
+    display: block;
   }
 }
+
 .section-team {
   padding-top: 60px;
   background-color: var(--secondary-button-background-color);
