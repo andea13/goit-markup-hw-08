@@ -36,7 +36,7 @@
 }
 
 .subscription--button {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 12px;
@@ -58,6 +58,11 @@
 
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: background-color var(--transition-time-main) var(--time-function);
+
+  @media (min-width: 1200px){
+    white-space: nowrap;
+    flex-wrap: nowrap;
+  }
 
   &:hover,
   &:focus {

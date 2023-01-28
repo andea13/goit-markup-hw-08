@@ -25,24 +25,6 @@
 }
 
 
-
-  // @media (min-width: 768px) {
-  //   margin: 0 auto;
-  //   max-width: 768px;
-  // }
-
-  //   @media (min-width: 1200px){
-  //     display: flex;
-  //     align-items: center;
-  //     align-content: center;
-  //   }
-
-
-//   //   @media (min-width: 1200px) {
-//   //     width: 1200px;
-//   //   }
-// }
-
 .container--mobile{
 display: flex;
 flex-direction: column;
@@ -50,20 +32,6 @@ align-content: space-between;
 height: 100%;
 }
 
-
-// .container-hero {
-//   text-align: center;
-//   padding-bottom: 0;
-
-//   @extend .container;
-// }
-
-
-// .container-team {
-//   // margin-left: auto;
-//   // margin-right: auto;
-//   background-color: var(--secondary-button-background-color);
-// }
 
 .team-list--container {
   padding-top: 30px;
@@ -90,22 +58,39 @@ height: 100%;
 .container--footer {
   max-width: 1200px;
   padding: 0;
+
+  @media (min-width: 1201px) and (max-width: 1600px){
+  margin-left: auto;
+  margin-right: auto;
+  }
 }
 
 .footer--tablet-container{
-  @media (min-width: 768px){
+  @media (min-width: 768px) {
   display: flex;
   gap: 165px;
   margin-bottom: 60px;
   padding-left: 61px;
   padding-right: 74px;
-  justify-content: baseline;
+  align-items: baseline;
+
+  @media (min-width: 1200px){
+  padding: 0;
+  gap: 94px;
+  margin-bottom: 0;
+  }
 }
 }
 
 .subscription--container {
   padding: 0;
   margin-left: auto;
+
+  @media (min-width: 1200px){
+
+
+    // margin-left: 94px;
+  }
 }
 
 .filter--container {
@@ -114,15 +99,17 @@ height: 100%;
   padding: 0, 15px;
 }
 
-// .container--footer {
-//   display: flex;
-//   align-items: baseline;
-// }
+.container--footer {
+  @media (min-width: 1200px){
+  display: flex;
+  align-items: baseline;
+}
+}
 
 .container--footer-networks {
   margin-bottom: 60px;
 
-  @media (min-width: 768px) {
+  @media (min-width: 768px){
       margin: 0;
     }
   // margin-left: 70px;

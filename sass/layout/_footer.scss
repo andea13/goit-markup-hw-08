@@ -8,9 +8,14 @@
   margin-top: 0;
   margin-bottom: 60px;
 
-  @media (min-width: 768px){
+  @media (min-width: 768px) {
     margin: 0;
   }
+
+  @media (min-width: 1200px) {
+      min-width: 207px;
+      // width: 100%;
+    }
   
 }
 
