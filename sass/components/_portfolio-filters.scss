@@ -1,12 +1,18 @@
 .filter--item-list {
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 8px;
     margin-top: 94px;
-    margin-right: auto;
     margin-bottom: 50px;
-    margin-left: auto;
+    margin: 0;
+
+    @media (max-width: 767px) {
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            margin-left: auto;
+            margin-right: auto;
+        }
 }
 
 .filter--item:last-child {

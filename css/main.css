@@ -545,17 +545,17 @@ body {
 }
 
 .filter--button {
-  color: var(--section-title-color);
-  background-color: var(--secondary-button-background-color);
+  height: 38px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
   text-align: center;
-  border: none;
   cursor: pointer;
   border-radius: 4px;
   padding: 6px 22px;
+  color: var(--section-title-color);
+  background-color: var(--secondary-button-background-color);
   border: 1px solid transparent;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -1310,20 +1310,30 @@ body {
 }
 
 .filter--item-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   gap: 8px;
   margin-top: 94px;
-  margin-right: auto;
   margin-bottom: 50px;
-  margin-left: auto;
+  margin: 0;
+}
+@media (max-width: 767px) {
+  .filter--item-list {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .filter--item:last-child {
@@ -1335,28 +1345,42 @@ body {
 }
 
 .product {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 30px;
-  margin-right: 0;
+  display: block;
+}
+@media (min-width: 768px) {
+  .product {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+    margin-right: 0;
+  }
 }
 
 .product--item {
-  -ms-flex-preferred-size: calc((100% - 60px) / 3);
-      flex-basis: calc((100% - 60px) / 3);
-  max-width: 370px;
-  max-height: 404px;
   list-style: none;
+  margin-bottom: 30px;
   -webkit-transition: -webkit-box-shadow var(--transition-time-main) var(--time-function);
   transition: -webkit-box-shadow var(--transition-time-main) var(--time-function);
   transition: box-shadow var(--transition-time-main) var(--time-function);
   transition: box-shadow var(--transition-time-main) var(--time-function), -webkit-box-shadow var(--transition-time-main) var(--time-function);
 }
-.product--item:nth-child(3n) {
-  margin-right: 0;
+.product--item:last-child {
+  margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  .product--item {
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media (min-width: 1200px) {
+  .product--item {
+    -ms-flex-preferred-size: calc((100% - 60px) / 3);
+        flex-basis: calc((100% - 60px) / 3);
+  }
 }
 .product--item:hover, .product--item:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -1624,11 +1648,13 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
+  max-width: 450px;
   width: 100%;
+  max-height: 404px;
   height: 100%;
   margin: 0;
   font-size: 18px;
-  padding: 63px 24px;
+  padding: 77px 24px;
   text-align: left;
   line-height: 1.6;
   color: var(--primary-button-color);
@@ -1639,6 +1665,11 @@ body {
   transition: -webkit-transform var(--transition-time-main) var(--time-function);
   transition: transform var(--transition-time-main) var(--time-function);
   transition: transform var(--transition-time-main) var(--time-function), -webkit-transform var(--transition-time-main) var(--time-function);
+}
+@media (min-width: 768px) {
+  .product--overlay {
+    padding: 63px 24px;
+  }
 }
 a:hover .product--overlay {
   -webkit-transform: translateY(0);
@@ -2101,6 +2132,8 @@ a:hover .product--overlay {
 }
 
 .product--thumb {
+  max-width: 450px;
+  width: 100%;
   position: relative;
   overflow: hidden;
 }/*# sourceMappingURL=main.css.map */
