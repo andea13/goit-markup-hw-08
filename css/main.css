@@ -1401,6 +1401,7 @@ body {
     max-width: 354px;
     width: 100%;
     height: 440px;
+    margin-bottom: 0;
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
         flex-basis: calc((100% - 30px) / 2);
   }
@@ -1419,7 +1420,7 @@ body {
 }
 
 .product--link {
-  height: auto;
+  height: 100%;
 }
 
 .product--card {
@@ -1432,6 +1433,13 @@ body {
 }
 @media (min-width: 768px) {
   .product--card {
+    max-height: 110px;
+    height: 100%;
+  }
+  .product--card:first-child {
+    min-height: 146px;
+  }
+  .product--card:nth-child(2) {
     min-height: 146px;
   }
 }
@@ -1690,7 +1698,7 @@ body {
   left: 0;
   max-width: 450px;
   width: 100%;
-  max-height: 404px;
+  max-height: 294px;
   height: 100%;
   margin: 0;
   font-size: 18px;
@@ -1709,6 +1717,19 @@ body {
 @media (min-width: 768px) {
   .product--overlay {
     padding: 63px 24px;
+    max-width: 354px;
+    width: 100%;
+    max-height: 294px;
+    height: 100%;
+  }
+}
+@media (min-width: 1200px) {
+  .product--overlay {
+    padding: 63px 24px;
+    max-width: 370px;
+    width: 100%;
+    max-height: 294px;
+    height: 100%;
   }
 }
 a:hover .product--overlay {

@@ -27,6 +27,7 @@
     max-width: 354px;
     width: 100%;
     height: 440px;
+    margin-bottom: 0;
     flex-basis: calc((100% - 30px) / 2);
   }
 
@@ -46,7 +47,7 @@
 }
 
 .product--link {
-  height: auto;
+  height: 100%;
 }
 
 .product--card {
@@ -58,7 +59,16 @@
   border-left: 1px solid var(--portfolio-border);
 
   @media (min-width: 768px) {
-    min-height: 146px;
+    max-height: 110px;
+    height: 100%;
+
+    &:first-child {
+      min-height: 146px;
+    }
+
+    &:nth-child(2) {
+      min-height: 146px;
+    }
   }
 }
 
