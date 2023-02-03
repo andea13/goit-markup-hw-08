@@ -1174,7 +1174,9 @@ body {
   right: 15px;
   border: none;
   background-color: transparent;
-  cursor: pointer;
+  fill: var(--logo-color);
+  -webkit-transition: fill var(--transition-time-main) var(--time-function);
+  transition: fill var(--transition-time-main) var(--time-function);
 }
 .mobile-menu--close:hover {
   fill: var(--accent-color);

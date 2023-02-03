@@ -83,7 +83,8 @@
   right: 15px;
   border: none;
   background-color: transparent;
-  cursor: pointer;
+  fill: var(--logo-color);
+ transition: fill var(--transition-time-main) var(--time-function);
 
   &:hover {
     fill: var(--accent-color);
