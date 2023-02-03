@@ -1715,6 +1715,14 @@ body {
   transition: transform var(--transition-time-main) var(--time-function);
   transition: transform var(--transition-time-main) var(--time-function), -webkit-transform var(--transition-time-main) var(--time-function);
 }
+@media (max-width: 479px) {
+  .product--overlay {
+    width: 100%;
+    height: auto;
+    padding: auto;
+    font-size: 18px;
+  }
+}
 @media (min-width: 768px) {
   .product--overlay {
     padding: 63px 24px;
