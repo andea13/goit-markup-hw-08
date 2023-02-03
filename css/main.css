@@ -1366,6 +1366,7 @@ body {
 
 .product {
   display: block;
+  margin-bottom: 60px;
 }
 @media (min-width: 768px) {
   .product {

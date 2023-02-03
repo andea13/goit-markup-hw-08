@@ -4,7 +4,7 @@
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
-text-align: center;
+  text-align: center;
 
   transition: color var(--transition-time-main) var(--time-function);
 
@@ -35,9 +35,7 @@ text-align: center;
   }
 }
 
-
 .address--label-list {
   display: block;
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
-

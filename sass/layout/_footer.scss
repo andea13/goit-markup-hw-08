@@ -13,10 +13,8 @@
   }
 
   @media (min-width: 1200px) {
-      min-width: 207px;
-      // width: 100%;
-    }
-  
+    min-width: 207px;
+  }
 }
 
 .logo--footer {
@@ -40,17 +38,3 @@
   color: var(--accent-color);
   @extend %logo;
 }
-
-// .network-list--item__footer {
-//   color: var(--primary-button-color);
-//   background-color: var(--footer-icon-color);
-//   background-color: var(--transition-time-main) var(--time-function);
-
-//   &:hover,
-//   &:focus {
-//     background-color: var(--accent-color);
-//   }
-// }
-
-
-

@@ -40,8 +40,8 @@
   transform: translateY(100%);
   transition: transform var(--transition-time-main) var(--time-function);
 
-  @media (min-width: 768px){
-  padding: 63px 24px;
+  @media (min-width: 768px) {
+    padding: 63px 24px;
   }
 
   a:hover & {

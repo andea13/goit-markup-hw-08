@@ -10,7 +10,7 @@
   transform: translateX(-100%);
   transition: transform 500ms;
 
-  @media (min-width: 768px){
+  @media (min-width: 768px) {
     display: none;
   }
 }
@@ -84,7 +84,7 @@
   border: none;
   background-color: transparent;
   fill: var(--logo-color);
- transition: fill var(--transition-time-main) var(--time-function);
+  transition: fill var(--transition-time-main) var(--time-function);
 
   &:hover {
     fill: var(--accent-color);
