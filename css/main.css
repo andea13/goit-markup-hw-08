@@ -1094,7 +1094,6 @@ body {
 
 .mobile-menu {
   overflow: hidden;
-  pointer-events: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -1137,6 +1136,7 @@ body {
 .mobile-nav--item,
 .mobile-contacts--item {
   margin-bottom: 32px;
+  cursor: pointer;
 }
 .mobile-nav--item:last-child,
 .mobile-contacts--item:last-child {
