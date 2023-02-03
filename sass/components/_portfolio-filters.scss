@@ -4,21 +4,27 @@
   justify-content: flex-start;
   flex-wrap: wrap;
   gap: 8px;
-  max-width: 450px;
+  max-width: 320px;
   width: 100%;
-  margin-top: 94px;
-  margin-bottom: 50px;
+  margin-top: 60px;
+  margin-bottom: 40px;
   margin-left: 0;
   margin-right: 0;
 
   @media (min-width: 768px) {
+    max-width: 636px;
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 30px;
     margin-top: 60px;
+    margin-bottom: 30px;
+
+    @media (min-width: 1200px){
+    margin-top: 94px;
+    margin-bottom: 50px;
+    }
 }
 }
 
