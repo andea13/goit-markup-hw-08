@@ -94,17 +94,19 @@
 
 .mobile-networks {
   display: inline-flex;
-  gap: 20px;
+  max-width: 357px;
+  width: 100%;
   margin: 0;
   padding: 0;
 
   &--link {
-    color: var(--accent-color);
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 1.2;
-  }
+      font-size: 18px;
+      text-decoration: none;
+      font-weight: 500;
+      line-height: 1.2;
+      color: var(--accent-color);
+    }
+  
 
   &--line {
     padding-left: 10px;

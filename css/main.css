@@ -1194,16 +1194,17 @@ body {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  gap: 20px;
+  max-width: 357px;
+  width: 100%;
   margin: 0;
   padding: 0;
 }
 .mobile-networks--link {
-  color: var(--accent-color);
+  font-size: 18px;
   text-decoration: none;
   font-weight: 500;
-  font-size: 18px;
   line-height: 1.2;
+  color: var(--accent-color);
 }
 .mobile-networks--line {
   padding-left: 10px;
