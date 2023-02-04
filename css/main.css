@@ -922,7 +922,6 @@ body {
 }
 
 .form-field--input {
-  max-width: 370px;
   width: 100%;
   max-height: 40px;
   height: 100%;
@@ -1004,7 +1003,6 @@ body {
   position: relative;
   font-size: 12px;
   line-height: 1.16;
-  max-width: 370px;
   width: 100%;
   max-height: 120px;
   height: 100%;
@@ -1025,6 +1023,23 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 31px;
+}
+@media (min-width: 1200px) {
+  .checkbox--field {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .checkbox {
@@ -1059,19 +1074,30 @@ body {
 }
 
 .checkbox--label {
-  font-size: 12px;
-  max-width: 346px;
   width: 100%;
-  max-height: 14px;
   height: 100%;
+  font-size: 12px;
+  line-height: 1.17;
+}
+@media (min-width: 1200px) {
+  .checkbox--label {
+    font-size: 14px;
+    line-height: 1.7;
+  }
 }
 
 .checkbox--policy-link {
   font-size: 12px;
-  max-width: 346px;
+  line-height: 1.17;
   width: 100%;
   color: var(--accent-color);
   text-decoration: underline;
+}
+@media (min-width: 1200px) {
+  .checkbox--policy-link {
+    font-size: 14px;
+    line-height: 1.7;
+  }
 }
 
 .logo {
@@ -1225,7 +1251,6 @@ body {
   background-color: var(--primary-button-color);
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  overflow-y: auto;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   -webkit-transition: -webkit-transform var(--transition-time-main) var(--time-function);
@@ -1233,7 +1258,16 @@ body {
   transition: transform var(--transition-time-main) var(--time-function);
   transition: transform var(--transition-time-main) var(--time-function), -webkit-transform var(--transition-time-main) var(--time-function);
 }
-@media (min-width: 1200px) {
+@media (min-width: 480px) {
+  .modal {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media (min-width: 796px) {
   .modal {
     max-width: 528px;
     width: 100%;
@@ -1255,10 +1289,8 @@ body {
           justify-content: center;
   top: 8px;
   right: 8px;
-  max-width: 30px;
-  width: 100%;
-  max-height: 30px;
-  height: 100%;
+  width: 30px;
+  height: 30px;
   padding: 0;
 }
 
@@ -1546,6 +1578,8 @@ body {
 .modal--title {
   margin-top: 0;
   margin-bottom: 12px;
+  max-width: 370px;
+  max-height: 60px;
   font-size: 20px;
   line-height: 1.5;
   text-align: center;
