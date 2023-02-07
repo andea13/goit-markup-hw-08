@@ -1160,6 +1160,16 @@ body {
   -webkit-transition: color var(--transition-time-main) var(--time-function);
   transition: color var(--transition-time-main) var(--time-function);
 }
+@media (max-width: 360px) {
+  .mobile-nav--link {
+    font-size: 30px;
+  }
+}
+@media (max-width: 426px) {
+  .mobile-nav--link {
+    font-size: 36px;
+  }
+}
 .mobile-nav--link__active {
   color: var(--accent-color);
 }
@@ -1192,11 +1202,21 @@ body {
   font-size: 34px;
   line-height: 1.17;
 }
+@media (max-width: 426px) {
+  .mobile-contacts--link__tel {
+    font-size: 24px;
+  }
+}
 
 .mobile-contacts--link__mail {
   font-size: 24px;
   line-height: 1.18;
   color: var(--primary-text-color);
+}
+@media (max-width: 360px) {
+  .mobile-contacts--link__mail {
+    font-size: 20px;
+  }
 }
 
 .mobile-menu.is-open {
@@ -1227,7 +1247,6 @@ body {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  max-width: 357px;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -1238,6 +1257,16 @@ body {
   font-weight: 500;
   line-height: 1.2;
   color: var(--accent-color);
+}
+@media (max-width: 426px) {
+  .mobile-networks--link {
+    font-size: 14px;
+  }
+}
+@media (max-width: 360px) {
+  .mobile-networks--link {
+    font-size: 10px;
+  }
 }
 .mobile-networks--line {
   padding-left: 10px;
@@ -1452,6 +1481,17 @@ body {
   margin-bottom: 0;
 }
 @media (min-width: 768px) {
+  .product--item:last-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media (min-width: 768px) {
   .product--item {
     max-width: 354px;
     width: 100%;
@@ -1475,6 +1515,13 @@ body {
 }
 
 .product--link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 100%;
 }
 
@@ -1485,18 +1532,9 @@ body {
   border-right: 1px solid var(--portfolio-border);
   border-bottom: 1px solid var(--portfolio-border);
   border-left: 1px solid var(--portfolio-border);
-}
-@media (min-width: 768px) {
-  .product--card {
-    max-height: 110px;
-    height: 100%;
-  }
-  .product--card:first-child {
-    min-height: 146px;
-  }
-  .product--card:nth-child(2) {
-    min-height: 146px;
-  }
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .product--card-label {
@@ -2073,11 +2111,6 @@ a:hover .product--overlay {
   background-color: var(--hero-background-color);
   padding-top: 60px;
   padding-bottom: 60px;
-}
-@media (min-width: 1200px) {
-  .footer {
-    width: 1200px;
-  }
 }
 
 .footer--nav {
