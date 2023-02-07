@@ -953,7 +953,7 @@ body {
 
 .comment--box {
   width: 100%;
-  height: 100%;
+  height: 120px;
   margin-top: 4px;
   resize: none;
   padding: 12px 16px;
@@ -1003,8 +1003,8 @@ body {
   position: relative;
   font-size: 12px;
   line-height: 1.16;
+  max-width: 448px;
   width: 100%;
-  max-height: 120px;
   height: 100%;
   margin-bottom: 20px;
 }
@@ -1036,9 +1036,7 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    margin-bottom: 30px;
   }
 }
 
@@ -1071,6 +1069,17 @@ body {
   transition: fill var(--transition-time-main) var(--time-function);
   background-color: var(--transition-time-main) var(--time-function);
   border-color: var(--transition-time-main) var(--time-function);
+}
+@media (max-width: 1199px) {
+  .checkbox--icon {
+    border: 2px solid var(--section-title-color);
+  }
+}
+@media (min-width: 1200px) {
+  .checkbox--icon {
+    margin-left: 12px;
+    border: 2px solid var(--section-title-color);
+  }
 }
 
 .checkbox--label {
@@ -1258,22 +1267,30 @@ body {
   transition: transform var(--transition-time-main) var(--time-function);
   transition: transform var(--transition-time-main) var(--time-function), -webkit-transform var(--transition-time-main) var(--time-function);
 }
-@media (min-width: 480px) {
-  .modal {
-    width: 450px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-}
-@media (min-width: 796px) {
+@media (min-width: 1200px) {
   .modal {
     max-width: 528px;
     width: 100%;
     max-height: 581px;
     height: 100%;
   }
+}
+
+.modal--close {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
 }
 
 .modal--close {
@@ -1578,12 +1595,15 @@ body {
 .modal--title {
   margin-top: 0;
   margin-bottom: 12px;
-  max-width: 370px;
-  max-height: 60px;
   font-size: 20px;
   line-height: 1.5;
   text-align: center;
   color: var(--section-title-color);
+}
+@media (min-width: 1200px) {
+  .modal--title {
+    line-height: 1.15;
+  }
 }
 
 .subscription--text {
