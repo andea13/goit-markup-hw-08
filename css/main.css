@@ -711,8 +711,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
 }
 @media (max-width: 480px) {
   .section-hero {
@@ -881,7 +880,6 @@ body {
 }
 @media (min-width: 768px) {
   .features-list--label {
-    max-width: 270px;
     text-align: left;
   }
 }
@@ -1135,7 +1133,7 @@ body {
   left: 0;
   width: 100vw;
   height: 100%;
-  padding: 48px 83px 48px 40px;
+  padding: 48px 48px 40px;
   background-color: var(--primary-button-color);
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
@@ -1517,6 +1515,12 @@ body {
   text-align: center;
 }
 
+@media (min-width: 768px) {
+  .section--subtitle__features {
+    text-align: left;
+  }
+}
+
 .team-list--subtitle {
   margin-bottom: 10px;
   font-weight: 500;
@@ -1613,6 +1617,11 @@ body {
   color: var(--primary-button-color);
   text-transform: uppercase;
   text-align: center;
+}
+@media (min-width: 1200px) {
+  .subscription--text {
+    text-align: left;
+  }
 }
 
 .subscription--form {
@@ -1835,6 +1844,25 @@ a:hover .product--overlay {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  height: 60px;
+}
+@media (min-width: 480px) {
+  .container--header {
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 768px) {
+  .container--header {
+    width: 768px;
+    height: 80px;
+  }
+}
+@media (min-width: 1200px) {
+  .container--header {
+    width: 1200px;
+  }
 }
 
 .container--mobile {
@@ -1848,6 +1876,12 @@ a:hover .product--overlay {
   -ms-flex-line-pack: justify;
       align-content: space-between;
   height: 100%;
+}
+
+.container--hero {
+  padding: 0;
+  margin: 0;
+  width: auto;
 }
 
 .team-list--container {
@@ -1871,29 +1905,17 @@ a:hover .product--overlay {
   margin-bottom: 0;
 }
 
-.container--footer {
-  max-width: 1200px;
-  padding: 0;
-}
-@media (min-width: 1201px) and (max-width: 1600px) {
-  .container--footer {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
 @media (min-width: 768px) {
   .footer--tablet-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 165px;
     margin-bottom: 60px;
-    padding-left: 61px;
-    padding-right: 74px;
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 @media (min-width: 768px) and (min-width: 1200px) {
@@ -1905,9 +1927,19 @@ a:hover .product--overlay {
 }
 
 .subscription--container {
+  max-width: 450px;
+  width: 100%;
   padding: 0;
   margin-left: auto;
+  margin-right: auto;
 }
+@media (min-width: 1200px) {
+  .subscription--container {
+    margin-left: 94px;
+    margin-right: 0;
+  }
+}
+
 .filter--container {
   max-width: 1200px;
   margin: 0, auto;
@@ -1922,6 +1954,12 @@ a:hover .product--overlay {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+  }
+}
+@media (min-width: 1201px) and (max-width: 1600px) {
+  .container--footer {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -2035,6 +2073,11 @@ a:hover .product--overlay {
   background-color: var(--hero-background-color);
   padding-top: 60px;
   padding-bottom: 60px;
+}
+@media (min-width: 1200px) {
+  .footer {
+    width: 1200px;
+  }
 }
 
 .footer--nav {
@@ -2157,27 +2200,19 @@ a:hover .product--overlay {
 .header {
   position: relative;
   border-bottom: 1px solid var(--header-border);
-  height: 60px;
+  min-height: 60px;
 }
 @media (min-width: 480px) {
   .header {
+    width: 480px;
     margin-left: auto;
     margin-right: auto;
   }
 }
 @media (min-width: 768px) {
   .header {
-    height: 80px;
-  }
-}
-@media (min-width: 480px) {
-  .header {
-    width: 480px;
-  }
-}
-@media (min-width: 768px) {
-  .header {
     width: 768px;
+    height: 80px;
   }
 }
 @media (min-width: 1200px) {

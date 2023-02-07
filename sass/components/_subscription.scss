@@ -5,6 +5,10 @@
   color: var(--primary-button-color);
   text-transform: uppercase;
   text-align: center;
+
+  @media (min-width: 1200px){
+  text-align: left;
+  }
 }
 
 .subscription--form {

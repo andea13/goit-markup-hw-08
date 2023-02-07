@@ -8,6 +8,12 @@
   text-align: center;
 }
 
+.section--subtitle__features{
+ @media (min-width: 768px) {
+text-align: left;
+ }
+}
+
 .team-list--subtitle {
   margin-bottom: 10px;
   font-weight: 500;

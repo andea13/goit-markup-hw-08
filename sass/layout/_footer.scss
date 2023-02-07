@@ -2,6 +2,10 @@
   background-color: var(--hero-background-color);
   padding-top: 60px;
   padding-bottom: 60px;
+
+  @media (min-width: 1200px){
+width: 1200px;
+  }
 }
 
 .footer--nav {
