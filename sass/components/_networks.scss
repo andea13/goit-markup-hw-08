@@ -33,7 +33,8 @@
   transition: color var(--transition-time-main) var(--time-function);
   background-color: var(--transition-time-main) var(--time-function);
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: var(--primary-button-color);
     background-color: var(--accent-color);
   }
@@ -44,7 +45,8 @@
   background-color: var(--footer-icon-color);
   transition: background-color var(--transition-time-main) var(--time-function);
 
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: var(--accent-color);
   }
 }

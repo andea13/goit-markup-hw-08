@@ -6,12 +6,8 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
+  overflow: scroll;
   transition: opacity var(--transition-time-main) var(--time-function);
-
-  // @media (min-width: 450px) {
-  //     padding-left: 15px;
-  //     padding-right: 15px;
-  //   }
 }
 
 .backdrop.is-hidden {

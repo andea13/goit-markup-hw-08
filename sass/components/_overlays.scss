@@ -59,7 +59,8 @@
     height: 100%;
   }
 
-  a:hover & {
+  a:hover &,
+  a:focus & {
     transform: translateY(0);
   }
 }
