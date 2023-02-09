@@ -81,21 +81,7 @@
   padding: 6px 22px;
   border: none;
   color: var(--logo-color);
-
-  @media (max-width: 767px){
- gap: 0;
- margin-right: 8px;
- margin-bottom: 15px;
- &:last-child,
- &:nth-child(4){
-  margin-bottom: 0;
- }
-
- &:last-child,
- &:nth-child(3){
-  margin-right: 0;
- }
-  }
+  
 
   .button & {
     color: var(--section-title-color);
