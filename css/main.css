@@ -1278,7 +1278,6 @@ body {
   max-width: 450px;
   width: 100%;
   max-height: 609px;
-  height: 100%;
   padding: 40px;
   border-radius: 4px;
   background-color: var(--primary-button-color);
@@ -2228,27 +2227,7 @@ a:hover .product--overlay, a:focus .product--overlay {
 }
 
 .header {
-  position: relative;
   border-bottom: 1px solid var(--header-border);
-  min-height: 60px;
-}
-@media (min-width: 480px) {
-  .header {
-    width: 480px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-@media (min-width: 768px) {
-  .header {
-    width: 768px;
-    height: 80px;
-  }
-}
-@media (min-width: 1200px) {
-  .header {
-    width: 1200px;
-  }
 }
 
 .header--burger {
