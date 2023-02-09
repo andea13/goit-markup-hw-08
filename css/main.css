@@ -557,6 +557,19 @@ body {
   border: none;
   color: var(--logo-color);
 }
+@media (max-width: 767px) {
+  .filter--button {
+    gap: 0;
+    margin-right: 8px;
+    margin-bottom: 15px;
+  }
+  .filter--button:last-child, .filter--button:nth-child(4) {
+    margin-bottom: 0;
+  }
+  .filter--button:last-child, .filter--button:nth-child(3) {
+    margin-right: 0;
+  }
+}
 .button .filter--button {
   color: var(--section-title-color);
   background-color: var(--secondary-button-background-color);
@@ -1412,7 +1425,10 @@ body {
           justify-content: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  gap: 8px;
+  row-gap: 15px;
+  -webkit-column-gap: 8px;
+     -moz-column-gap: 8px;
+          column-gap: 8px;
   max-width: 320px;
   width: 100%;
   margin-top: 60px;
